@@ -1,0 +1,25 @@
+# ===== 依赖（项目内隔离安装，不入库）=====
+_deps/
+
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ===== 合成测试图缓存 =====
+# 由 tests/synth.py::ensure_case 按需重建（run_matrix 首次运行会自动生成）
+image_to_gcode/tests/synth/
+
+# ===== 临时产物 =====
+*.tmp
+*.bak
+*_tmp.py
+_z.nc
+_t.nc
+
+# ===== 编辑器 / 系统 =====
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

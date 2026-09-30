@@ -1,0 +1,42 @@
+[
+ {
+  "merge_rms_max": 1.1,
+  "recover_min_run_pts": 6,
+  "n_pass": 8,
+  "n_total": 14,
+  "worst_ep": 1.547,
+  "w1_pass": 4
+ },
+ {
+  "merge_rms_max": 0.8,
+  "recover_min_run_pts": 6,
+  "n_pass": 8,
+  "n_total": 14,
+  "worst_ep": 1.547,
+  "w1_pass": 4
+ },
+ {
+  "merge_rms_max": 0.6,
+  "recover_min_run_pts": 6,
+  "n_pass": 8,
+  "n_total": 14,
+  "worst_ep": 1.547,
+  "w1_pass": 4
+ },
+ {
+  "merge_rms_max": 1.1,
+  "recover_min_run_pts": 4,
+  "n_pass": 8,
+  "n_total": 14,
+  "worst_ep": 1.547,
+  "w1_pass": 4
+ },
+ {
+  "merge_rms_max": 0.8,
+  "recover_min_run_pts": 4,
+  "n_pass": 8,
+  "n_total": 14,
+  "worst_ep": 1.547,
+  "w1_pass": 4
+ }
+]

@@ -1,0 +1,2478 @@
+{
+ "subset": "resolution",
+ "n": 10,
+ "aggregate": {
+  "n_total": 10,
+  "n_with_metrics": 9,
+  "n_all_pass": 8,
+  "n_error": 1,
+  "n_metric_fail": 1,
+  "per_metric": {
+   "endpoint_err": {
+    "worst": 7.790935253977131,
+    "mean": 0.9126927651532211,
+    "target": 0.2,
+    "dir": "max"
+   },
+   "center_err": {
+    "worst": 0.12075014966394368,
+    "mean": 0.052729769751463276,
+    "target": 0.2,
+    "dir": "max"
+   },
+   "radius_err": {
+    "worst": 0.07818926803784887,
+    "mean": 0.04094080225063025,
+    "target": 0.2,
+    "dir": "max"
+   },
+   "type_acc": {
+    "worst": 0.5555555555555556,
+    "mean": 0.9506172839506173,
+    "target": 0.9,
+    "dir": "min"
+   },
+   "arc_recall": {
+    "worst": 1.0,
+    "mean": 1.0,
+    "target": 0.9,
+    "dir": "min"
+   },
+   "hausdorff": {
+    "worst": 2.0291321724397857,
+    "mean": 0.2696316324490315,
+    "target": 0.3,
+    "dir": "max"
+   }
+  },
+  "metric_pass_rate": {
+   "endpoint_err": {
+    "n_pass": 8,
+    "n": 9,
+    "rate": 0.8888888888888888
+   },
+   "center_err": {
+    "n_pass": 9,
+    "n": 9,
+    "rate": 1.0
+   },
+   "radius_err": {
+    "n_pass": 9,
+    "n": 9,
+    "rate": 1.0
+   },
+   "type_acc": {
+    "n_pass": 8,
+    "n": 9,
+    "rate": 0.8888888888888888
+   },
+   "arc_recall": {
+    "n_pass": 9,
+    "n": 9,
+    "rate": 1.0
+   },
+   "hausdorff": {
+    "n_pass": 8,
+    "n": 9,
+    "rate": 0.8888888888888888
+   }
+  }
+ },
+ "results": [
+  {
+   "case": "px3_w2_s+0_n0_r5",
+   "spec": {
+    "px_per_mm": 3,
+    "line_width": 2,
+    "skew_deg": 0.0,
+    "noise": 0.0,
+    "fillet_r": 5.0,
+    "seed": 20260928,
+    "margin_px": 24,
+    "supersample": 4,
+    "tag": ""
+   },
+   "ok": false,
+   "error": "DiscontinuousContourError: 轮廓不闭合：4 处连接间隙超过 0.5 mm 容差。第 1 段与第 2 段之间间隙 2.6404 mm (Z0.000X19.944 → Z2.640X20.000)；第 2 段与第 3 段之间间隙 2.8877 mm (Z-27.114X20.000 → Z-29.728X18.774)；第 3 段与第 4 段之间间隙 3.0575 mm (Z-30.403X7.970 → Z-33.460X7.986)；第 4 段与第 5 段之间间隙 4.2015 mm (Z-50.084X7.986 → Z-46.818X5.343)\n提示：多为提取断链（笔画中断、噪点切断、小连通域被误删）。可试 --no-denoise / 减小 --min-area / 增大闭运算半径 --close-radius。",
+   "seconds": 0.3189401626586914,
+   "metrics": null,
+   "verdict": null,
+   "stats": null,
+   "warnings": []
+  },
+  {
+   "case": "px4_w2_s+0_n0_r5",
+   "spec": {
+    "px_per_mm": 4,
+    "line_width": 2,
+    "skew_deg": 0.0,
+    "noise": 0.0,
+    "fillet_r": 5.0,
+    "seed": 20260928,
+    "margin_px": 24,
+    "supersample": 4,
+    "tag": ""
+   },
+   "ok": true,
+   "error": null,
+   "seconds": 0.647305965423584,
+   "metrics": {
+    "endpoint_err": 7.790935253977131,
+    "center_err": 0.0709803230719098,
+    "radius_err": 0.05002455085363966,
+    "type_acc": 0.5555555555555556,
+    "arc_recall": 1.0,
+    "hausdorff": 2.0291321724397857,
+    "endpoint_rms": 2.340300376630322,
+    "center_err_rms": 0.05149748145960221,
+    "radius_err_rms": 0.03683725573258869,
+    "strict_radius_ok": true,
+    "gauge_shift_mm": 0.008270853374378273,
+    "endpoint_err_convention": 7.7838179418200575
+   },
+   "verdict": [
+    {
+     "metric": "endpoint_err",
+     "value": 7.790935253977131,
+     "target": "<= 0.2 mm",
+     "pass": false
+    },
+    {
+     "metric": "center_err",
+     "value": 0.0709803230719098,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "radius_err",
+     "value": 0.05002455085363966,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "type_acc",
+     "value": 0.5555555555555556,
+     "target": ">= 90%",
+     "pass": false
+    },
+    {
+     "metric": "arc_recall",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "hausdorff",
+     "value": 2.0291321724397857,
+     "target": "<= 0.3 mm",
+     "pass": false
+    }
+   ],
+   "stats": {
+    "mm_per_px": 0.24951605444646127,
+    "pixels_per_mm": 4.00775814693948,
+    "scale_err_pct": -0.1935782214154913,
+    "theta_deg": 0.0,
+    "skew_contrast": 1.2882237265880498,
+    "noise_estimate_px": 0.766,
+    "grow_tol_px": 3.0,
+    "n_segments": 8,
+    "n_arcs_detected": 3,
+    "axis_source": "cap_mass",
+    "stroke_width_px": 2.2534,
+    "subpixel_shift_px": 0.6672473867595841,
+    "axis_end_spread_px": 0.0,
+    "n_angle_snapped": 4,
+    "n_absorbed": 0,
+    "chain_gap_max_mm": 0.0,
+    "n_moves": 11,
+    "safe_x": 22.0
+   },
+   "warnings": [],
+   "all_pass": false,
+   "n_entities": 8,
+   "n_truth": 9,
+   "pair_detail": [
+    {
+     "truth": 0,
+     "ext": 0,
+     "kind": "line",
+     "dist_mm": 0.0294
+    },
+    {
+     "truth": 1,
+     "ext": 1,
+     "kind": "line",
+     "dist_mm": 0.0407
+    },
+    {
+     "truth": 2,
+     "ext": 2,
+     "kind": "arc",
+     "center_err": 0.071,
+     "radius_err": 0.05,
+     "dist_mm": 0.021
+    },
+    {
+     "truth": 3,
+     "ext": 3,
+     "kind": "line",
+     "dist_mm": 0.0195
+    },
+    {
+     "truth": 4,
+     "ext": 4,
+     "kind": "arc",
+     "center_err": 0.0163,
+     "radius_err": 0.0145,
+     "dist_mm": 0.0151
+    }
+   ],
+   "entities_mm": [
+    {
+     "type": "line",
+     "start": [
+      -6.060408212852468e-16,
+      0.0
+     ],
+     "end": [
+      6.085827936783657e-16,
+      19.943666277125082
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      6.085827936783657e-16,
+      19.943666277125082
+     ],
+     "end": [
+      -19.95791461666745,
+      20.0
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -19.95791461666745,
+      20.0
+     ],
+     "end": [
+      -25.007939167521087,
+      14.94997544914636
+     ],
+     "center": [
+      -19.95791461666745,
+      14.94997544914636
+     ],
+     "radius": 5.05002455085364,
+     "ccw": true
+    },
+    {
+     "type": "line",
+     "start": [
+      -25.007939167521087,
+      14.94997544914636
+     ],
+     "end": [
+      -24.9899686614925,
+      13.015863372310944
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -24.9899686614925,
+      13.015863372310944
+     ],
+     "end": [
+      -30.004512083775715,
+      8.00131995002773
+     ],
+     "center": [
+      -30.004512083775715,
+      13.015863372310944
+     ],
+     "radius": 5.014543422283214,
+     "ccw": false
+    },
+    {
+     "type": "line",
+     "start": [
+      -30.004512083775715,
+      8.00131995002773
+     ],
+     "end": [
+      -47.30286923042726,
+      7.966895663694964
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -47.30286923042726,
+      7.966895663694964
+     ],
+     "end": [
+      -65.60437058677505,
+      5.483125941841303
+     ],
+     "center": [
+      -58.34190091567343,
+      20.63869092698984
+     ],
+     "radius": 16.80579113706734,
+     "ccw": false
+    },
+    {
+     "type": "line",
+     "start": [
+      -65.60437058677505,
+      5.483125941841303
+     ],
+     "end": [
+      -70.14764603649999,
+      1.6790478150748684
+     ]
+    }
+   ],
+   "gcode": "(DXF 转 G 代码 v2)\n(源文件: image)\n(脉冲当量: 0.01 mm)\n(DXF 单位: mm)\n(单位缩放: 1.0)\n(X 编程: 半径)\n(安全退刀 X: 22.000)\n(I/K 约定: Fanuc G18 (I=X,K=Z))\n(警告: X 按半径输出; 若机床为直径编程请加 --x-diameter)\nG21 (mm)\nG18 (ZX plane)\nG90 (absolute)\nG94 F100\n\nG00 X22.000 Z0.000\nG00 X0.000 Z0.000\nG01 X19.940 Z0.000\nG01 X20.000 Z-19.960\nG03 X14.950 Z-25.010 I-5.050 K0.000 (R5.050)\nG01 X13.020 Z-24.990\nG02 X8.000 Z-30.000 I0.000 K-5.010 (R5.015)\nG01 X7.970 Z-47.300\nG02 X5.480 Z-65.600 I12.670 K-11.040 (R16.806)\nG01 X1.680 Z-70.150\nG00 X22.000 Z-70.150\nM30"
+  },
+  {
+   "case": "px5_w2_s+0_n0_r5",
+   "spec": {
+    "px_per_mm": 5,
+    "line_width": 2,
+    "skew_deg": 0.0,
+    "noise": 0.0,
+    "fillet_r": 5.0,
+    "seed": 20260928,
+    "margin_px": 24,
+    "supersample": 4,
+    "tag": ""
+   },
+   "ok": true,
+   "error": null,
+   "seconds": 0.41203880310058594,
+   "metrics": {
+    "endpoint_err": 0.09201650399559114,
+    "center_err": 0.12075014966394368,
+    "radius_err": 0.07818926803784887,
+    "type_acc": 1.0,
+    "arc_recall": 1.0,
+    "hausdorff": 0.055907789843292074,
+    "endpoint_rms": 0.05477681185840187,
+    "center_err_rms": 0.08938727301564603,
+    "radius_err_rms": 0.07423228121475053,
+    "strict_radius_ok": true,
+    "gauge_shift_mm": 3.202360430308026e-16,
+    "endpoint_err_convention": 0.09201650399559114
+   },
+   "verdict": [
+    {
+     "metric": "endpoint_err",
+     "value": 0.09201650399559114,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "center_err",
+     "value": 0.12075014966394368,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "radius_err",
+     "value": 0.07818926803784887,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "type_acc",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "arc_recall",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "hausdorff",
+     "value": 0.055907789843292074,
+     "target": "<= 0.3 mm",
+     "pass": true
+    }
+   ],
+   "stats": {
+    "mm_per_px": 0.20000168442497301,
+    "pixels_per_mm": 4.999957889730332,
+    "scale_err_pct": 0.0008422124865070657,
+    "theta_deg": 0.0,
+    "skew_contrast": 1.3705492260164198,
+    "noise_estimate_px": 0.6512,
+    "grow_tol_px": 2.6048854135348476,
+    "n_segments": 9,
+    "n_arcs_detected": 2,
+    "axis_source": "cap_mass",
+    "stroke_width_px": 2.2517,
+    "subpixel_shift_px": 0.6672473867595841,
+    "axis_end_spread_px": 0.0,
+    "n_angle_snapped": 7,
+    "n_absorbed": 0,
+    "chain_gap_max_mm": 0.0,
+    "n_moves": 12,
+    "safe_x": 21.999999999999996
+   },
+   "warnings": [],
+   "all_pass": true,
+   "n_entities": 9,
+   "n_truth": 9,
+   "pair_detail": [
+    {
+     "truth": 0,
+     "ext": 0,
+     "kind": "line",
+     "dist_mm": 0.0068
+    },
+    {
+     "truth": 1,
+     "ext": 1,
+     "kind": "line",
+     "dist_mm": 0.0465
+    },
+    {
+     "truth": 2,
+     "ext": 2,
+     "kind": "arc",
+     "center_err": 0.1208,
+     "radius_err": 0.0782,
+     "dist_mm": 0.0433
+    },
+    {
+     "truth": 3,
+     "ext": 3,
+     "kind": "line",
+     "dist_mm": 0.0399
+    },
+    {
+     "truth": 4,
+     "ext": 4,
+     "kind": "arc",
+     "center_err": 0.0374,
+     "radius_err": 0.0701,
+     "dist_mm": 0.0354
+    },
+    {
+     "truth": 5,
+     "ext": 5,
+     "kind": "line",
+     "dist_mm": 0.0271
+    },
+    {
+     "truth": 6,
+     "ext": 6,
+     "kind": "line",
+     "dist_mm": 0.0685
+    },
+    {
+     "truth": 7,
+     "ext": 7,
+     "kind": "line",
+     "dist_mm": 0.0366
+    },
+    {
+     "truth": 8,
+     "ext": 8,
+     "kind": "line",
+     "dist_mm": 0.0069
+    }
+   ],
+   "entities_mm": [
+    {
+     "type": "line",
+     "start": [
+      -6.082428103452571e-16,
+      0.0
+     ],
+     "end": [
+      6.102803496190863e-16,
+      19.986383317163856
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      6.102803496190863e-16,
+      19.986383317163856
+     ],
+     "end": [
+      -20.09201650399559,
+      19.999999999999996
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -20.09201650399559,
+      19.999999999999996
+     ],
+     "end": [
+      -25.01382723595774,
+      15.078189268037846
+     ],
+     "center": [
+      -20.09201650399559,
+      15.078189268037846
+     ],
+     "radius": 4.921810731962151,
+     "ccw": true
+    },
+    {
+     "type": "line",
+     "start": [
+      -25.01382723595774,
+      15.078189268037846
+     ],
+     "end": [
+      -25.051570297050997,
+      12.967473207898935
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -25.051570297050997,
+      12.967473207898935
+     ],
+     "end": [
+      -29.98151816280516,
+      8.037525342144775
+     ],
+     "center": [
+      -29.98151816280516,
+      12.967473207898935
+     ],
+     "radius": 4.929947865754161,
+     "ccw": false
+    },
+    {
+     "type": "line",
+     "start": [
+      -29.98151816280516,
+      8.037525342144775
+     ],
+     "end": [
+      -50.06711553258718,
+      7.9862822516654735
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -50.06711553258718,
+      7.9862822516654735
+     ],
+     "end": [
+      -54.067149221086645,
+      3.986248563166013
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -54.067149221086645,
+      3.986248563166013
+     ],
+     "end": [
+      -69.00058112661567,
+      3.986248563166013
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -69.00058112661567,
+      3.986248563166013
+     ],
+     "end": [
+      -69.00058112661567,
+      0.0
+     ]
+    }
+   ],
+   "gcode": "(DXF 转 G 代码 v2)\n(源文件: image)\n(脉冲当量: 0.01 mm)\n(DXF 单位: mm)\n(单位缩放: 1.0)\n(X 编程: 半径)\n(安全退刀 X: 22.000)\n(I/K 约定: Fanuc G18 (I=X,K=Z))\n(警告: X 按半径输出; 若机床为直径编程请加 --x-diameter)\nG21 (mm)\nG18 (ZX plane)\nG90 (absolute)\nG94 F100\n\nG00 X22.000 Z0.000\nG00 X0.000 Z0.000\nG01 X19.990 Z0.000\nG01 X20.000 Z-20.090\nG03 X15.080 Z-25.010 I-4.920 K0.000 (R4.922)\nG01 X12.970 Z-25.050\nG02 X8.040 Z-29.980 I0.000 K-4.930 (R4.930)\nG01 X7.990 Z-50.070\nG01 X3.990 Z-54.070\nG01 X3.990 Z-69.000\nG01 X0.000 Z-69.000\nG00 X22.000 Z-69.000\nM30"
+  },
+  {
+   "case": "px6_w2_s+0_n0_r5",
+   "spec": {
+    "px_per_mm": 6,
+    "line_width": 2,
+    "skew_deg": 0.0,
+    "noise": 0.0,
+    "fillet_r": 5.0,
+    "seed": 20260928,
+    "margin_px": 24,
+    "supersample": 4,
+    "tag": ""
+   },
+   "ok": true,
+   "error": null,
+   "seconds": 0.44924306869506836,
+   "metrics": {
+    "endpoint_err": 0.052575121195485526,
+    "center_err": 0.0475089461827504,
+    "radius_err": 0.06575145026367046,
+    "type_acc": 1.0,
+    "arc_recall": 1.0,
+    "hausdorff": 0.04798632232391667,
+    "endpoint_rms": 0.035974606702671844,
+    "center_err_rms": 0.046730627484329094,
+    "radius_err_rms": 0.049098559767256224,
+    "strict_radius_ok": true,
+    "gauge_shift_mm": -0.01161476051539978,
+    "endpoint_err_convention": 0.049171306107125425
+   },
+   "verdict": [
+    {
+     "metric": "endpoint_err",
+     "value": 0.052575121195485526,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "center_err",
+     "value": 0.0475089461827504,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "radius_err",
+     "value": 0.06575145026367046,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "type_acc",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "arc_recall",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "hausdorff",
+     "value": 0.04798632232391667,
+     "target": "<= 0.3 mm",
+     "pass": true
+    }
+   ],
+   "stats": {
+    "mm_per_px": 0.16655752872149895,
+    "pixels_per_mm": 6.003931540507551,
+    "scale_err_pct": -0.06548276710063305,
+    "theta_deg": 0.0,
+    "skew_contrast": 1.4500133322849134,
+    "noise_estimate_px": 0.4886,
+    "grow_tol_px": 1.9544043176834633,
+    "n_segments": 9,
+    "n_arcs_detected": 2,
+    "axis_source": "cap_mass",
+    "stroke_width_px": 2.2505,
+    "subpixel_shift_px": 0.6672473867595841,
+    "axis_end_spread_px": 0.0,
+    "n_angle_snapped": 7,
+    "n_absorbed": 0,
+    "chain_gap_max_mm": 0.0,
+    "n_moves": 12,
+    "safe_x": 22.0
+   },
+   "warnings": [],
+   "all_pass": true,
+   "n_entities": 9,
+   "n_truth": 9,
+   "pair_detail": [
+    {
+     "truth": 0,
+     "ext": 0,
+     "kind": "line",
+     "dist_mm": 0.0168
+    },
+    {
+     "truth": 1,
+     "ext": 1,
+     "kind": "line",
+     "dist_mm": 0.0294
+    },
+    {
+     "truth": 2,
+     "ext": 2,
+     "kind": "arc",
+     "center_err": 0.0475,
+     "radius_err": 0.0223,
+     "dist_mm": 0.027
+    },
+    {
+     "truth": 3,
+     "ext": 3,
+     "kind": "line",
+     "dist_mm": 0.0296
+    },
+    {
+     "truth": 4,
+     "ext": 4,
+     "kind": "arc",
+     "center_err": 0.0459,
+     "radius_err": 0.0658,
+     "dist_mm": 0.0211
+    },
+    {
+     "truth": 5,
+     "ext": 5,
+     "kind": "line",
+     "dist_mm": 0.007
+    },
+    {
+     "truth": 6,
+     "ext": 6,
+     "kind": "line",
+     "dist_mm": 0.0359
+    },
+    {
+     "truth": 7,
+     "ext": 7,
+     "kind": "line",
+     "dist_mm": 0.0139
+    },
+    {
+     "truth": 8,
+     "ext": 8,
+     "kind": "line",
+     "dist_mm": 0.0343
+    }
+   ],
+   "entities_mm": [
+    {
+     "type": "line",
+     "start": [
+      -6.08519902897217e-16,
+      0.0
+     ],
+     "end": [
+      6.102167261369707e-16,
+      19.97562123764157
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      6.102167261369707e-16,
+      19.97562123764157
+     ],
+     "end": [
+      -20.03032586461983,
+      20.0
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -20.03032586461983,
+      20.0
+     ],
+     "end": [
+      -25.008008070583195,
+      15.022317794036635
+     ],
+     "center": [
+      -20.03032586461983,
+      15.022317794036635
+     ],
+     "radius": 4.977682205963363,
+     "ccw": true
+    },
+    {
+     "type": "line",
+     "start": [
+      -25.008008070583195,
+      15.022317794036635
+     ],
+     "end": [
+      -25.02623226367779,
+      12.963506903002896
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -25.02623226367779,
+      12.963506903002896
+     ],
+     "end": [
+      -29.960480813414122,
+      8.029258353266567
+     ],
+     "center": [
+      -29.960480813414122,
+      12.963506903002896
+     ],
+     "radius": 4.9342485497363295,
+     "ccw": false
+    },
+    {
+     "type": "line",
+     "start": [
+      -29.960480813414122,
+      8.029258353266567
+     ],
+     "end": [
+      -50.02225288943356,
+      7.983479169693659
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -50.02225288943356,
+      7.983479169693659
+     ],
+     "end": [
+      -54.01963357874954,
+      3.9860984803776756
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -54.01963357874954,
+      3.9860984803776756
+     ],
+     "end": [
+      -68.95481689070049,
+      3.986098480377676
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -68.95481689070049,
+      3.986098480377676
+     ],
+     "end": [
+      -68.95481689070049,
+      0.0
+     ]
+    }
+   ],
+   "gcode": "(DXF 转 G 代码 v2)\n(源文件: image)\n(脉冲当量: 0.01 mm)\n(DXF 单位: mm)\n(单位缩放: 1.0)\n(X 编程: 半径)\n(安全退刀 X: 22.000)\n(I/K 约定: Fanuc G18 (I=X,K=Z))\n(警告: X 按半径输出; 若机床为直径编程请加 --x-diameter)\nG21 (mm)\nG18 (ZX plane)\nG90 (absolute)\nG94 F100\n\nG00 X22.000 Z0.000\nG00 X0.000 Z0.000\nG01 X19.980 Z0.000\nG01 X20.000 Z-20.030\nG03 X15.020 Z-25.010 I-4.980 K0.000 (R4.978)\nG01 X12.960 Z-25.030\nG02 X8.030 Z-29.960 I0.000 K-4.930 (R4.934)\nG01 X7.980 Z-50.020\nG01 X3.990 Z-54.020\nG01 X3.990 Z-68.950\nG01 X0.000 Z-68.950\nG00 X22.000 Z-68.950\nM30"
+  },
+  {
+   "case": "px8_w2_s+0_n0_r5",
+   "spec": {
+    "px_per_mm": 8,
+    "line_width": 2,
+    "skew_deg": 0.0,
+    "noise": 0.0,
+    "fillet_r": 5.0,
+    "seed": 20260928,
+    "margin_px": 24,
+    "supersample": 4,
+    "tag": ""
+   },
+   "ok": true,
+   "error": null,
+   "seconds": 0.5687041282653809,
+   "metrics": {
+    "endpoint_err": 0.034212029549346795,
+    "center_err": 0.0256607159150115,
+    "radius_err": 0.036873818079920184,
+    "type_acc": 1.0,
+    "arc_recall": 1.0,
+    "hausdorff": 0.04371198438410087,
+    "endpoint_rms": 0.024518587277094033,
+    "center_err_rms": 0.02494316499469858,
+    "radius_err_rms": 0.02679302750829271,
+    "strict_radius_ok": true,
+    "gauge_shift_mm": -0.008484019824571476,
+    "endpoint_err_convention": 0.042352438033808094
+   },
+   "verdict": [
+    {
+     "metric": "endpoint_err",
+     "value": 0.034212029549346795,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "center_err",
+     "value": 0.0256607159150115,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "radius_err",
+     "value": 0.036873818079920184,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "type_acc",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "arc_recall",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "hausdorff",
+     "value": 0.04371198438410087,
+     "target": "<= 0.3 mm",
+     "pass": true
+    }
+   ],
+   "stats": {
+    "mm_per_px": 0.12492577214725908,
+    "pixels_per_mm": 8.004753405255942,
+    "scale_err_pct": -0.05938228219273256,
+    "theta_deg": 0.0,
+    "skew_contrast": 1.6906615680584607,
+    "noise_estimate_px": 0.3734,
+    "grow_tol_px": 1.4935947142537858,
+    "n_segments": 9,
+    "n_arcs_detected": 2,
+    "axis_source": "cap_mass",
+    "stroke_width_px": 2.2495,
+    "subpixel_shift_px": 0.6672473867595841,
+    "axis_end_spread_px": 0.0,
+    "n_angle_snapped": 7,
+    "n_absorbed": 0,
+    "chain_gap_max_mm": 0.0,
+    "n_moves": 12,
+    "safe_x": 22.0
+   },
+   "warnings": [],
+   "all_pass": true,
+   "n_entities": 9,
+   "n_truth": 9,
+   "pair_detail": [
+    {
+     "truth": 0,
+     "ext": 0,
+     "kind": "line",
+     "dist_mm": 0.0132
+    },
+    {
+     "truth": 1,
+     "ext": 1,
+     "kind": "line",
+     "dist_mm": 0.0185
+    },
+    {
+     "truth": 2,
+     "ext": 2,
+     "kind": "arc",
+     "center_err": 0.0242,
+     "radius_err": 0.0087,
+     "dist_mm": 0.0166
+    },
+    {
+     "truth": 3,
+     "ext": 3,
+     "kind": "line",
+     "dist_mm": 0.0195
+    },
+    {
+     "truth": 4,
+     "ext": 4,
+     "kind": "arc",
+     "center_err": 0.0257,
+     "radius_err": 0.0369,
+     "dist_mm": 0.013
+    },
+    {
+     "truth": 5,
+     "ext": 5,
+     "kind": "line",
+     "dist_mm": 0.0035
+    },
+    {
+     "truth": 6,
+     "ext": 6,
+     "kind": "line",
+     "dist_mm": 0.0227
+    },
+    {
+     "truth": 7,
+     "ext": 7,
+     "kind": "line",
+     "dist_mm": 0.0129
+    },
+    {
+     "truth": 8,
+     "ext": 8,
+     "kind": "line",
+     "dist_mm": 0.0329
+    }
+   ],
+   "entities_mm": [
+    {
+     "type": "line",
+     "start": [
+      -6.09407734406352e-16,
+      0.0
+     ],
+     "end": [
+      6.106804295228735e-16,
+      19.97978068234185
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      6.106804295228735e-16,
+      19.97978068234185
+     ],
+     "end": [
+      -20.014094652242346,
+      20.0
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -20.014094652242346,
+      20.0
+     ],
+     "end": [
+      -25.005373747109893,
+      15.008720905132451
+     ],
+     "center": [
+      -20.014094652242346,
+      15.008720905132451
+     ],
+     "radius": 4.991279094867549,
+     "ccw": true
+    },
+    {
+     "type": "line",
+     "start": [
+      -25.005373747109893,
+      15.008720905132451
+     ],
+     "end": [
+      -25.014463133478543,
+      12.978447265847105
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -25.014463133478543,
+      12.978447265847105
+     ],
+     "end": [
+      -29.97758931539862,
+      8.015321083927025
+     ],
+     "center": [
+      -29.97758931539862,
+      12.978447265847105
+     ],
+     "radius": 4.96312618192008,
+     "ccw": false
+    },
+    {
+     "type": "line",
+     "start": [
+      -29.97758931539862,
+      8.015321083927025
+     ],
+     "end": [
+      -50.012016573562306,
+      7.986906556204973
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -50.012016573562306,
+      7.986906556204973
+     ],
+     "end": [
+      -54.009641282274615,
+      3.9892818474926672
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -54.009641282274615,
+      3.9892818474926672
+     ],
+     "end": [
+      -68.95902622528693,
+      3.9892818474926672
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -68.95902622528693,
+      3.9892818474926672
+     ],
+     "end": [
+      -68.95902622528693,
+      0.0
+     ]
+    }
+   ],
+   "gcode": "(DXF 转 G 代码 v2)\n(源文件: image)\n(脉冲当量: 0.01 mm)\n(DXF 单位: mm)\n(单位缩放: 1.0)\n(X 编程: 半径)\n(安全退刀 X: 22.000)\n(I/K 约定: Fanuc G18 (I=X,K=Z))\n(警告: X 按半径输出; 若机床为直径编程请加 --x-diameter)\nG21 (mm)\nG18 (ZX plane)\nG90 (absolute)\nG94 F100\n\nG00 X22.000 Z0.000\nG00 X0.000 Z0.000\nG01 X19.980 Z0.000\nG01 X20.000 Z-20.010\nG03 X15.010 Z-25.010 I-4.990 K0.000 (R4.991)\nG01 X12.980 Z-25.010\nG02 X8.020 Z-29.980 I0.000 K-4.970 (R4.963)\nG01 X7.990 Z-50.010\nG01 X3.990 Z-54.010\nG01 X3.990 Z-68.960\nG01 X0.000 Z-68.960\nG00 X22.000 Z-68.960\nM30"
+  },
+  {
+   "case": "px10_w2_s+0_n0_r5",
+   "spec": {
+    "px_per_mm": 10,
+    "line_width": 2,
+    "skew_deg": 0.0,
+    "noise": 0.0,
+    "fillet_r": 5.0,
+    "seed": 20260928,
+    "margin_px": 24,
+    "supersample": 4,
+    "tag": ""
+   },
+   "ok": true,
+   "error": null,
+   "seconds": 0.6210241317749023,
+   "metrics": {
+    "endpoint_err": 0.05156022066426402,
+    "center_err": 0.06945433685322713,
+    "radius_err": 0.04653438033082402,
+    "type_acc": 1.0,
+    "arc_recall": 1.0,
+    "hausdorff": 0.035477891131736786,
+    "endpoint_rms": 0.03089596235121554,
+    "center_err_rms": 0.05318519495545839,
+    "radius_err_rms": 0.045732655483115725,
+    "strict_radius_ok": true,
+    "gauge_shift_mm": 0.0018304565629776448,
+    "endpoint_err_convention": 0.05339067722724167
+   },
+   "verdict": [
+    {
+     "metric": "endpoint_err",
+     "value": 0.05156022066426402,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "center_err",
+     "value": 0.06945433685322713,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "radius_err",
+     "value": 0.04653438033082402,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "type_acc",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "arc_recall",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "hausdorff",
+     "value": 0.035477891131736786,
+     "target": "<= 0.3 mm",
+     "pass": true
+    }
+   ],
+   "stats": {
+    "mm_per_px": 0.10000676420931205,
+    "pixels_per_mm": 9.999323624820228,
+    "scale_err_pct": 0.006764209312049019,
+    "theta_deg": 0.0,
+    "skew_contrast": 1.959603804078515,
+    "noise_estimate_px": 0.2826,
+    "grow_tol_px": 1.1304786235808495,
+    "n_segments": 9,
+    "n_arcs_detected": 2,
+    "axis_source": "cap_mass",
+    "stroke_width_px": 2.2479,
+    "subpixel_shift_px": 0.6672473867595841,
+    "axis_end_spread_px": 0.0,
+    "n_angle_snapped": 7,
+    "n_absorbed": 0,
+    "chain_gap_max_mm": 0.0,
+    "n_moves": 12,
+    "safe_x": 22.0
+   },
+   "warnings": [],
+   "all_pass": true,
+   "n_entities": 9,
+   "n_truth": 9,
+   "pair_detail": [
+    {
+     "truth": 0,
+     "ext": 0,
+     "kind": "line",
+     "dist_mm": 0.0032
+    },
+    {
+     "truth": 1,
+     "ext": 1,
+     "kind": "line",
+     "dist_mm": 0.025
+    },
+    {
+     "truth": 2,
+     "ext": 2,
+     "kind": "arc",
+     "center_err": 0.0695,
+     "radius_err": 0.0465,
+     "dist_mm": 0.0231
+    },
+    {
+     "truth": 3,
+     "ext": 3,
+     "kind": "line",
+     "dist_mm": 0.02
+    },
+    {
+     "truth": 4,
+     "ext": 4,
+     "kind": "arc",
+     "center_err": 0.0289,
+     "radius_err": 0.0449,
+     "dist_mm": 0.0167
+    },
+    {
+     "truth": 5,
+     "ext": 5,
+     "kind": "line",
+     "dist_mm": 0.0118
+    },
+    {
+     "truth": 6,
+     "ext": 6,
+     "kind": "line",
+     "dist_mm": 0.0357
+    },
+    {
+     "truth": 7,
+     "ext": 7,
+     "kind": "line",
+     "dist_mm": 0.0201
+    },
+    {
+     "truth": 8,
+     "ext": 8,
+     "kind": "line",
+     "dist_mm": 0.0042
+    }
+   ],
+   "entities_mm": [
+    {
+     "type": "line",
+     "start": [
+      -6.103218242859524e-16,
+      0.0
+     ],
+     "end": [
+      6.113406542538643e-16,
+      19.99483475543171
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      6.113406542538643e-16,
+      19.99483475543171
+     ],
+     "end": [
+      -20.05339067722724,
+      20.0
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -20.05339067722724,
+      20.0
+     ],
+     "end": [
+      -25.006856296896416,
+      15.046534380330826
+     ],
+     "center": [
+      -20.05339067722724,
+      15.046534380330826
+     ],
+     "radius": 4.953465619669176,
+     "ccw": true
+    },
+    {
+     "type": "line",
+     "start": [
+      -25.006856296896416,
+      15.046534380330826
+     ],
+     "end": [
+      -25.02907972822201,
+      12.977168229998238
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -25.02907972822201,
+      12.977168229998238
+     ],
+     "end": [
+      -29.984163105438224,
+      8.022084852782024
+     ],
+     "center": [
+      -29.984163105438224,
+      12.977168229998238
+     ],
+     "radius": 4.955083377216214,
+     "ccw": false
+    },
+    {
+     "type": "line",
+     "start": [
+      -29.984163105438224,
+      8.022084852782024
+     ],
+     "end": [
+      -50.03683384460071,
+      7.994023050314266
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -50.03683384460071,
+      7.994023050314266
+     ],
+     "end": [
+      -54.03710441297319,
+      3.9937524819417822
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -54.03710441297319,
+      3.9937524819417822
+     ],
+     "end": [
+      -69.00466730442542,
+      3.9937524819417822
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -69.00466730442542,
+      3.9937524819417822
+     ],
+     "end": [
+      -69.00466730442542,
+      0.0
+     ]
+    }
+   ],
+   "gcode": "(DXF 转 G 代码 v2)\n(源文件: image)\n(脉冲当量: 0.01 mm)\n(DXF 单位: mm)\n(单位缩放: 1.0)\n(X 编程: 半径)\n(安全退刀 X: 22.000)\n(I/K 约定: Fanuc G18 (I=X,K=Z))\n(警告: X 按半径输出; 若机床为直径编程请加 --x-diameter)\nG21 (mm)\nG18 (ZX plane)\nG90 (absolute)\nG94 F100\n\nG00 X22.000 Z0.000\nG00 X0.000 Z0.000\nG01 X19.990 Z0.000\nG01 X20.000 Z-20.050\nG03 X15.050 Z-25.010 I-4.950 K0.000 (R4.953)\nG01 X12.980 Z-25.030\nG02 X8.020 Z-29.980 I0.000 K-4.950 (R4.955)\nG01 X7.990 Z-50.040\nG01 X3.990 Z-54.040\nG01 X3.990 Z-69.000\nG01 X0.000 Z-69.000\nG00 X22.000 Z-69.000\nM30"
+  },
+  {
+   "case": "px12_w2_s+0_n0_r5",
+   "spec": {
+    "px_per_mm": 12,
+    "line_width": 2,
+    "skew_deg": 0.0,
+    "noise": 0.0,
+    "fillet_r": 5.0,
+    "seed": 20260928,
+    "margin_px": 24,
+    "supersample": 4,
+    "tag": ""
+   },
+   "ok": true,
+   "error": null,
+   "seconds": 0.6788220405578613,
+   "metrics": {
+    "endpoint_err": 0.07553047054066561,
+    "center_err": 0.0635642530841792,
+    "radius_err": 0.044864713534414236,
+    "type_acc": 1.0,
+    "arc_recall": 1.0,
+    "hausdorff": 0.08485280548048431,
+    "endpoint_rms": 0.0430343038919828,
+    "center_err_rms": 0.0462298366539139,
+    "radius_err_rms": 0.03172512797609342,
+    "strict_radius_ok": true,
+    "gauge_shift_mm": -5.436735615905875e-16,
+    "endpoint_err_convention": 0.07553047054066561
+   },
+   "verdict": [
+    {
+     "metric": "endpoint_err",
+     "value": 0.07553047054066561,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "center_err",
+     "value": 0.0635642530841792,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "radius_err",
+     "value": 0.044864713534414236,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "type_acc",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "arc_recall",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "hausdorff",
+     "value": 0.08485280548048431,
+     "target": "<= 0.3 mm",
+     "pass": true
+    }
+   ],
+   "stats": {
+    "mm_per_px": 0.08324285400134579,
+    "pixels_per_mm": 12.013043185470707,
+    "scale_err_pct": -0.10857519838505247,
+    "theta_deg": 0.0,
+    "skew_contrast": 2.216094091153373,
+    "noise_estimate_px": 0.2205,
+    "grow_tol_px": 0.9,
+    "n_segments": 9,
+    "n_arcs_detected": 2,
+    "axis_source": "cap_mass",
+    "stroke_width_px": 2.246,
+    "subpixel_shift_px": 0.6672473867595841,
+    "axis_end_spread_px": 0.0,
+    "n_angle_snapped": 7,
+    "n_absorbed": 0,
+    "chain_gap_max_mm": 0.0,
+    "n_moves": 12,
+    "safe_x": 22.0
+   },
+   "warnings": [],
+   "all_pass": true,
+   "n_entities": 9,
+   "n_truth": 9,
+   "pair_detail": [
+    {
+     "truth": 0,
+     "ext": 0,
+     "kind": "line",
+     "dist_mm": 0.0135
+    },
+    {
+     "truth": 1,
+     "ext": 1,
+     "kind": "line",
+     "dist_mm": 0.0262
+    },
+    {
+     "truth": 2,
+     "ext": 2,
+     "kind": "arc",
+     "center_err": 0.0636,
+     "radius_err": 0.0449,
+     "dist_mm": 0.0187
+    },
+    {
+     "truth": 3,
+     "ext": 3,
+     "kind": "line",
+     "dist_mm": 0.0243
+    },
+    {
+     "truth": 4,
+     "ext": 4,
+     "kind": "arc",
+     "center_err": 0.0153,
+     "radius_err": 0.0004,
+     "dist_mm": 0.015
+    },
+    {
+     "truth": 5,
+     "ext": 5,
+     "kind": "line",
+     "dist_mm": 0.0223
+    },
+    {
+     "truth": 6,
+     "ext": 6,
+     "kind": "line",
+     "dist_mm": 0.0313
+    },
+    {
+     "truth": 7,
+     "ext": 7,
+     "kind": "line",
+     "dist_mm": 0.0539
+    },
+    {
+     "truth": 8,
+     "ext": 8,
+     "kind": "line",
+     "dist_mm": 0.0751
+    }
+   ],
+   "entities_mm": [
+    {
+     "type": "line",
+     "start": [
+      -6.099580366393339e-16,
+      0.0
+     ],
+     "end": [
+      6.108060824184522e-16,
+      19.973020052798525
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      6.108060824184522e-16,
+      19.973020052798525
+     ],
+     "end": [
+      -19.954971434070977,
+      20.0
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -19.954971434070977,
+      20.0
+     ],
+     "end": [
+      -24.999836147605393,
+      14.955135286465584
+     ],
+     "center": [
+      -19.954971434070977,
+      14.955135286465584
+     ],
+     "radius": 5.044864713534414,
+     "ccw": true
+    },
+    {
+     "type": "line",
+     "start": [
+      -24.999836147605393,
+      14.955135286465584
+     ],
+     "end": [
+      -24.985118390482867,
+      12.998631627976717
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -24.985118390482867,
+      12.998631627976717
+     ],
+     "end": [
+      -29.984764879982375,
+      7.998985138477211
+     ],
+     "center": [
+      -29.984764879982375,
+      12.998631627976717
+     ],
+     "radius": 4.999646489499506,
+     "ccw": false
+    },
+    {
+     "type": "line",
+     "start": [
+      -29.984764879982375,
+      7.998985138477211
+     ],
+     "end": [
+      -49.97318083483506,
+      7.98604907660477
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -49.97318083483506,
+      7.98604907660477
+     ],
+     "end": [
+      -53.968837826899666,
+      3.990392084540169
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -53.968837826899666,
+      3.990392084540169
+     ],
+     "end": [
+      -68.92508311311452,
+      3.990392084540169
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -68.92508311311452,
+      3.990392084540169
+     ],
+     "end": [
+      -68.92508311311452,
+      0.0
+     ]
+    }
+   ],
+   "gcode": "(DXF 转 G 代码 v2)\n(源文件: image)\n(脉冲当量: 0.01 mm)\n(DXF 单位: mm)\n(单位缩放: 1.0)\n(X 编程: 半径)\n(安全退刀 X: 22.000)\n(I/K 约定: Fanuc G18 (I=X,K=Z))\n(警告: X 按半径输出; 若机床为直径编程请加 --x-diameter)\nG21 (mm)\nG18 (ZX plane)\nG90 (absolute)\nG94 F100\n\nG00 X22.000 Z0.000\nG00 X0.000 Z0.000\nG01 X19.970 Z0.000\nG01 X20.000 Z-19.950\nG03 X14.960 Z-25.000 I-5.040 K0.000 (R5.045)\nG01 X13.000 Z-24.990\nG02 X8.000 Z-29.980 I0.000 K-4.990 (R5.000)\nG01 X7.990 Z-49.970\nG01 X3.990 Z-53.970\nG01 X3.990 Z-68.930\nG01 X0.000 Z-68.930\nG00 X22.000 Z-68.930\nM30"
+  },
+  {
+   "case": "px15_w2_s+0_n0_r5",
+   "spec": {
+    "px_per_mm": 15,
+    "line_width": 2,
+    "skew_deg": 0.0,
+    "noise": 0.0,
+    "fillet_r": 5.0,
+    "seed": 20260928,
+    "margin_px": 24,
+    "supersample": 4,
+    "tag": ""
+   },
+   "ok": true,
+   "error": null,
+   "seconds": 0.7872369289398193,
+   "metrics": {
+    "endpoint_err": 0.035748937724470124,
+    "center_err": 0.023641946019930544,
+    "radius_err": 0.021329070625810687,
+    "type_acc": 1.0,
+    "arc_recall": 1.0,
+    "hausdorff": 0.041880481600949634,
+    "endpoint_rms": 0.020252452690148883,
+    "center_err_rms": 0.01893811673427436,
+    "radius_err_rms": 0.018656652986715577,
+    "strict_radius_ok": true,
+    "gauge_shift_mm": -0.010183222406979553,
+    "endpoint_err_convention": 0.04578498351296021
+   },
+   "verdict": [
+    {
+     "metric": "endpoint_err",
+     "value": 0.035748937724470124,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "center_err",
+     "value": 0.023641946019930544,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "radius_err",
+     "value": 0.021329070625810687,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "type_acc",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "arc_recall",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "hausdorff",
+     "value": 0.041880481600949634,
+     "target": "<= 0.3 mm",
+     "pass": true
+    }
+   ],
+   "stats": {
+    "mm_per_px": 0.066622928142101,
+    "pixels_per_mm": 15.009847628838614,
+    "scale_err_pct": -0.06560778684850943,
+    "theta_deg": 0.0,
+    "skew_contrast": 2.6172835299222763,
+    "noise_estimate_px": 0.1783,
+    "grow_tol_px": 0.9,
+    "n_segments": 9,
+    "n_arcs_detected": 2,
+    "axis_source": "cap_mass",
+    "stroke_width_px": 2.2462,
+    "subpixel_shift_px": 0.6672473867595823,
+    "axis_end_spread_px": 0.0,
+    "n_angle_snapped": 7,
+    "n_absorbed": 0,
+    "chain_gap_max_mm": 0.0,
+    "n_moves": 12,
+    "safe_x": 22.0
+   },
+   "warnings": [],
+   "all_pass": true,
+   "n_entities": 9,
+   "n_truth": 9,
+   "pair_detail": [
+    {
+     "truth": 0,
+     "ext": 0,
+     "kind": "line",
+     "dist_mm": 0.0134
+    },
+    {
+     "truth": 1,
+     "ext": 1,
+     "kind": "line",
+     "dist_mm": 0.0087
+    },
+    {
+     "truth": 2,
+     "ext": 2,
+     "kind": "arc",
+     "center_err": 0.0236,
+     "radius_err": 0.0213,
+     "dist_mm": 0.0079
+    },
+    {
+     "truth": 3,
+     "ext": 3,
+     "kind": "line",
+     "dist_mm": 0.0185
+    },
+    {
+     "truth": 4,
+     "ext": 4,
+     "kind": "arc",
+     "center_err": 0.0126,
+     "radius_err": 0.0155,
+     "dist_mm": 0.0038
+    },
+    {
+     "truth": 5,
+     "ext": 5,
+     "kind": "line",
+     "dist_mm": 0.0045
+    },
+    {
+     "truth": 6,
+     "ext": 6,
+     "kind": "line",
+     "dist_mm": 0.0084
+    },
+    {
+     "truth": 7,
+     "ext": 7,
+     "kind": "line",
+     "dist_mm": 0.0203
+    },
+    {
+     "truth": 8,
+     "ext": 8,
+     "kind": "line",
+     "dist_mm": 0.0353
+    }
+   ],
+   "entities_mm": [
+    {
+     "type": "line",
+     "start": [
+      -6.105606572971865e-16,
+      0.0
+     ],
+     "end": [
+      6.112393857439871e-16,
+      19.982650849971932
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      6.112393857439871e-16,
+      19.982650849971932
+     ],
+     "end": [
+      -19.97961813269046,
+      20.0
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -19.97961813269046,
+      20.0
+     ],
+     "end": [
+      -25.000947203316272,
+      14.97867092937419
+     ],
+     "center": [
+      -19.97961813269046,
+      14.97867092937419
+     ],
+     "radius": 5.021329070625811,
+     "ccw": true
+    },
+    {
+     "type": "line",
+     "start": [
+      -25.000947203316272,
+      14.97867092937419
+     ],
+     "end": [
+      -24.998065022924443,
+      12.989737236423709
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -24.998065022924443,
+      12.989737236423709
+     ],
+     "end": [
+      -29.982534016917985,
+      8.005268242430166
+     ],
+     "center": [
+      -29.982534016917985,
+      12.989737236423709
+     ],
+     "radius": 4.984468993993542,
+     "ccw": false
+    },
+    {
+     "type": "line",
+     "start": [
+      -29.982534016917985,
+      8.005268242430166
+     ],
+     "end": [
+      -49.989253399492846,
+      7.9905237843937025
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -49.989253399492846,
+      7.9905237843937025
+     ],
+     "end": [
+      -53.98662908801894,
+      3.9931480958676078
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -53.98662908801894,
+      3.9931480958676078
+     ],
+     "end": [
+      -68.95473062707478,
+      3.9931480958676078
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -68.95473062707478,
+      3.9931480958676078
+     ],
+     "end": [
+      -68.95473062707478,
+      0.0
+     ]
+    }
+   ],
+   "gcode": "(DXF 转 G 代码 v2)\n(源文件: image)\n(脉冲当量: 0.01 mm)\n(DXF 单位: mm)\n(单位缩放: 1.0)\n(X 编程: 半径)\n(安全退刀 X: 22.000)\n(I/K 约定: Fanuc G18 (I=X,K=Z))\n(警告: X 按半径输出; 若机床为直径编程请加 --x-diameter)\nG21 (mm)\nG18 (ZX plane)\nG90 (absolute)\nG94 F100\n\nG00 X22.000 Z0.000\nG00 X0.000 Z0.000\nG01 X19.980 Z0.000\nG01 X20.000 Z-19.980\nG03 X14.980 Z-25.000 I-5.020 K0.000 (R5.021)\nG01 X12.990 Z-25.000\nG02 X8.010 Z-29.980 I0.000 K-4.980 (R4.984)\nG01 X7.990 Z-49.990\nG01 X3.990 Z-53.990\nG01 X3.990 Z-68.950\nG01 X0.000 Z-68.950\nG00 X22.000 Z-68.950\nM30"
+  },
+  {
+   "case": "px20_w2_s+0_n0_r5",
+   "spec": {
+    "px_per_mm": 20,
+    "line_width": 2,
+    "skew_deg": 0.0,
+    "noise": 0.0,
+    "fillet_r": 5.0,
+    "seed": 20260928,
+    "margin_px": 24,
+    "supersample": 4,
+    "tag": ""
+   },
+   "ok": true,
+   "error": null,
+   "seconds": 0.9632341861724854,
+   "metrics": {
+    "endpoint_err": 0.04095780047745741,
+    "center_err": 0.02327055581734692,
+    "radius_err": 0.010204547820904075,
+    "type_acc": 1.0,
+    "arc_recall": 1.0,
+    "hausdorff": 0.04432785592681008,
+    "endpoint_rms": 0.023796488149743132,
+    "center_err_rms": 0.022161925845578686,
+    "radius_err_rms": 0.009281833029681458,
+    "strict_radius_ok": true,
+    "gauge_shift_mm": 0.012115069840861636,
+    "endpoint_err_convention": 0.028960740022355123
+   },
+   "verdict": [
+    {
+     "metric": "endpoint_err",
+     "value": 0.04095780047745741,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "center_err",
+     "value": 0.02327055581734692,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "radius_err",
+     "value": 0.010204547820904075,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "type_acc",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "arc_recall",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "hausdorff",
+     "value": 0.04432785592681008,
+     "target": "<= 0.3 mm",
+     "pass": true
+    }
+   ],
+   "stats": {
+    "mm_per_px": 0.049979303473039555,
+    "pixels_per_mm": 20.008282038973036,
+    "scale_err_pct": -0.041393053920890654,
+    "theta_deg": 0.0,
+    "skew_contrast": 3.292370969791439,
+    "noise_estimate_px": 0.1276,
+    "grow_tol_px": 0.9,
+    "n_segments": 9,
+    "n_arcs_detected": 2,
+    "axis_source": "cap_mass",
+    "stroke_width_px": 2.2455,
+    "subpixel_shift_px": 0.6672473867595823,
+    "axis_end_spread_px": 0.0,
+    "n_angle_snapped": 7,
+    "n_absorbed": 0,
+    "chain_gap_max_mm": 0.0,
+    "n_moves": 12,
+    "safe_x": 22.0
+   },
+   "warnings": [],
+   "all_pass": true,
+   "n_entities": 9,
+   "n_truth": 9,
+   "pair_detail": [
+    {
+     "truth": 0,
+     "ext": 0,
+     "kind": "line",
+     "dist_mm": 0.0134
+    },
+    {
+     "truth": 1,
+     "ext": 1,
+     "kind": "line",
+     "dist_mm": 0.0167
+    },
+    {
+     "truth": 2,
+     "ext": 2,
+     "kind": "arc",
+     "center_err": 0.021,
+     "radius_err": 0.0083,
+     "dist_mm": 0.0137
+    },
+    {
+     "truth": 3,
+     "ext": 3,
+     "kind": "line",
+     "dist_mm": 0.0137
+    },
+    {
+     "truth": 4,
+     "ext": 4,
+     "kind": "arc",
+     "center_err": 0.0233,
+     "radius_err": 0.0102,
+     "dist_mm": 0.0152
+    },
+    {
+     "truth": 5,
+     "ext": 5,
+     "kind": "line",
+     "dist_mm": 0.0193
+    },
+    {
+     "truth": 6,
+     "ext": 6,
+     "kind": "line",
+     "dist_mm": 0.0178
+    },
+    {
+     "truth": 7,
+     "ext": 7,
+     "kind": "line",
+     "dist_mm": 0.0296
+    },
+    {
+     "truth": 8,
+     "ext": 8,
+     "kind": "line",
+     "dist_mm": 0.0407
+    }
+   ],
+   "entities_mm": [
+    {
+     "type": "line",
+     "start": [
+      -6.110489350484058e-16,
+      0.0
+     ],
+     "end": [
+      6.11558104728636e-16,
+      19.988583166689363
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      6.11558104728636e-16,
+      19.988583166689363
+     ],
+     "end": [
+      -19.99281193295151,
+      20.0
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -19.99281193295151,
+      20.0
+     ],
+     "end": [
+      -25.001068569830572,
+      14.99174336312094
+     ],
+     "center": [
+      -19.99281193295151,
+      14.99174336312094
+     ],
+     "radius": 5.00825663687906,
+     "ccw": true
+    },
+    {
+     "type": "line",
+     "start": [
+      -25.001068569830572,
+      14.99174336312094
+     ],
+     "end": [
+      -24.999922696480684,
+      12.993683617359867
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -24.999922696480684,
+      12.993683617359867
+     ],
+     "end": [
+      -29.98971814865978,
+      8.003888165180772
+     ],
+     "center": [
+      -29.98971814865978,
+      12.993683617359867
+     ],
+     "radius": 4.989795452179096,
+     "ccw": false
+    },
+    {
+     "type": "line",
+     "start": [
+      -29.98971814865978,
+      8.003888165180772
+     ],
+     "end": [
+      -49.99602128883565,
+      7.993550333159941
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -49.99602128883565,
+      7.993550333159941
+     ],
+     "end": [
+      -53.9943655666788,
+      3.99520605531679
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -53.9943655666788,
+      3.99520605531679
+     ],
+     "end": [
+      -68.97143879279483,
+      3.9952060553167903
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -68.97143879279483,
+      3.9952060553167903
+     ],
+     "end": [
+      -68.97143879279483,
+      0.0
+     ]
+    }
+   ],
+   "gcode": "(DXF 转 G 代码 v2)\n(源文件: image)\n(脉冲当量: 0.01 mm)\n(DXF 单位: mm)\n(单位缩放: 1.0)\n(X 编程: 半径)\n(安全退刀 X: 22.000)\n(I/K 约定: Fanuc G18 (I=X,K=Z))\n(警告: X 按半径输出; 若机床为直径编程请加 --x-diameter)\nG21 (mm)\nG18 (ZX plane)\nG90 (absolute)\nG94 F100\n\nG00 X22.000 Z0.000\nG00 X0.000 Z0.000\nG01 X19.990 Z0.000\nG01 X20.000 Z-19.990\nG03 X14.990 Z-25.000 I-5.010 K0.000 (R5.008)\nG01 X12.990 Z-25.000\nG02 X8.000 Z-29.990 I0.000 K-4.990 (R4.990)\nG01 X7.990 Z-50.000\nG01 X4.000 Z-53.990\nG01 X4.000 Z-68.970\nG01 X0.000 Z-68.970\nG00 X22.000 Z-68.970\nM30"
+  },
+  {
+   "case": "px25_w2_s+0_n0_r5",
+   "spec": {
+    "px_per_mm": 25,
+    "line_width": 2,
+    "skew_deg": 0.0,
+    "noise": 0.0,
+    "fillet_r": 5.0,
+    "seed": 20260928,
+    "margin_px": 24,
+    "supersample": 4,
+    "tag": ""
+   },
+   "ok": true,
+   "error": null,
+   "seconds": 1.492922067642212,
+   "metrics": {
+    "endpoint_err": 0.040698548254578755,
+    "center_err": 0.029736701154870253,
+    "radius_err": 0.01469542070864005,
+    "type_acc": 1.0,
+    "arc_recall": 1.0,
+    "hausdorff": 0.043407388910207054,
+    "endpoint_rms": 0.02524279326070212,
+    "center_err_rms": 0.02777979624792905,
+    "radius_err_rms": 0.01316950460334706,
+    "strict_radius_ok": true,
+    "gauge_shift_mm": 0.01148631096802788,
+    "endpoint_err_convention": 0.029294053129205074
+   },
+   "verdict": [
+    {
+     "metric": "endpoint_err",
+     "value": 0.040698548254578755,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "center_err",
+     "value": 0.029736701154870253,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "radius_err",
+     "value": 0.01469542070864005,
+     "target": "<= 0.2 mm",
+     "pass": true
+    },
+    {
+     "metric": "type_acc",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "arc_recall",
+     "value": 1.0,
+     "target": ">= 90%",
+     "pass": true
+    },
+    {
+     "metric": "hausdorff",
+     "value": 0.043407388910207054,
+     "target": "<= 0.3 mm",
+     "pass": true
+    }
+   ],
+   "stats": {
+    "mm_per_px": 0.039983186162282205,
+    "pixels_per_mm": 25.010513067698977,
+    "scale_err_pct": -0.0420345942944822,
+    "theta_deg": 0.0,
+    "skew_contrast": 3.976125086999155,
+    "noise_estimate_px": 0.1047,
+    "grow_tol_px": 0.9,
+    "n_segments": 9,
+    "n_arcs_detected": 2,
+    "axis_source": "cap_mass",
+    "stroke_width_px": 2.2436,
+    "subpixel_shift_px": 0.6672473867595823,
+    "axis_end_spread_px": 0.0,
+    "n_angle_snapped": 7,
+    "n_absorbed": 0,
+    "chain_gap_max_mm": 0.0,
+    "n_moves": 12,
+    "safe_x": 22.0
+   },
+   "warnings": [],
+   "all_pass": true,
+   "n_entities": 9,
+   "n_truth": 9,
+   "pair_detail": [
+    {
+     "truth": 0,
+     "ext": 0,
+     "kind": "line",
+     "dist_mm": 0.0127
+    },
+    {
+     "truth": 1,
+     "ext": 1,
+     "kind": "line",
+     "dist_mm": 0.0194
+    },
+    {
+     "truth": 2,
+     "ext": 2,
+     "kind": "arc",
+     "center_err": 0.0297,
+     "radius_err": 0.0147,
+     "dist_mm": 0.016
+    },
+    {
+     "truth": 3,
+     "ext": 3,
+     "kind": "line",
+     "dist_mm": 0.0166
+    },
+    {
+     "truth": 4,
+     "ext": 4,
+     "kind": "arc",
+     "center_err": 0.0257,
+     "radius_err": 0.0114,
+     "dist_mm": 0.0162
+    },
+    {
+     "truth": 5,
+     "ext": 5,
+     "kind": "line",
+     "dist_mm": 0.0218
+    },
+    {
+     "truth": 6,
+     "ext": 6,
+     "kind": "line",
+     "dist_mm": 0.0206
+    },
+    {
+     "truth": 7,
+     "ext": 7,
+     "kind": "line",
+     "dist_mm": 0.0309
+    },
+    {
+     "truth": 8,
+     "ext": 8,
+     "kind": "line",
+     "dist_mm": 0.0405
+    }
+   ],
+   "entities_mm": [
+    {
+     "type": "line",
+     "start": [
+      -6.112492130229389e-16,
+      0.0
+     ],
+     "end": [
+      6.116565461528178e-16,
+      19.989161428308734
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      6.116565461528178e-16,
+      19.989161428308734
+     ],
+     "end": [
+      -19.98563450240905,
+      20.0
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -19.98563450240905,
+      20.0
+     ],
+     "end": [
+      -25.00032992311769,
+      14.985304579291359
+     ],
+     "center": [
+      -19.98563450240905,
+      14.985304579291359
+     ],
+     "radius": 5.01469542070864,
+     "ccw": true
+    },
+    {
+     "type": "line",
+     "start": [
+      -25.00032992311769,
+      14.985304579291359
+     ],
+     "end": [
+      -24.99859556942439,
+      12.99180933821548
+     ]
+    },
+    {
+     "type": "arc",
+     "start": [
+      -24.99859556942439,
+      12.99180933821548
+     ],
+     "end": [
+      -29.987153702741402,
+      8.003251204898467
+     ],
+     "center": [
+      -29.987153702741402,
+      12.99180933821548
+     ],
+     "radius": 4.988558133317014,
+     "ccw": false
+    },
+    {
+     "type": "line",
+     "start": [
+      -29.987153702741402,
+      8.003251204898467
+     ],
+     "end": [
+      -49.99234866949866,
+      7.994205579624242
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -49.99234866949866,
+      7.994205579624242
+     ],
+     "end": [
+      -53.99066728572688,
+      3.9958869633960203
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -53.99066728572688,
+      3.9958869633960203
+     ],
+     "end": [
+      -68.970996129937,
+      3.9958869633960203
+     ]
+    },
+    {
+     "type": "line",
+     "start": [
+      -68.970996129937,
+      3.9958869633960203
+     ],
+     "end": [
+      -68.970996129937,
+      0.0
+     ]
+    }
+   ],
+   "gcode": "(DXF 转 G 代码 v2)\n(源文件: image)\n(脉冲当量: 0.01 mm)\n(DXF 单位: mm)\n(单位缩放: 1.0)\n(X 编程: 半径)\n(安全退刀 X: 22.000)\n(I/K 约定: Fanuc G18 (I=X,K=Z))\n(警告: X 按半径输出; 若机床为直径编程请加 --x-diameter)\nG21 (mm)\nG18 (ZX plane)\nG90 (absolute)\nG94 F100\n\nG00 X22.000 Z0.000\nG00 X0.000 Z0.000\nG01 X19.990 Z0.000\nG01 X20.000 Z-19.990\nG03 X14.990 Z-25.000 I-5.010 K0.000 (R5.015)\nG01 X12.990 Z-25.000\nG02 X8.000 Z-29.990 I0.000 K-4.990 (R4.989)\nG01 X7.990 Z-49.990\nG01 X4.000 Z-53.990\nG01 X4.000 Z-68.970\nG01 X0.000 Z-68.970\nG00 X22.000 Z-68.970\nM30"
+  }
+ ]
+}

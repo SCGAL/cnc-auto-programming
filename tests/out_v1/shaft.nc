@@ -1,0 +1,20 @@
+(DXF to G-Code Converter)
+(Source: shaft.dxf)
+(Pulse Equivalent: 0.01 mm)
+G21 (mm mode)
+G90 (absolute coordinates)
+F100.0
+
+G00 Z80.000 X10.000 (快速定位到起点)
+G01 Z65.000 X10.000
+G01 Z60.000 X15.000
+G01 Z30.000 X15.000
+G03 Z35.000 X20.000 I5.000 K0.000 (R5.000)
+G01 Z0.000 X20.000
+G01 Z0.000 X0.000
+G01 Z0.000 X20.000
+G00 Z80.000 X10.000 (快速移动到下一段起点)
+G01 Z80.000 X0.000
+G01 Z80.000 X10.000
+
+M30 (程序结束)
