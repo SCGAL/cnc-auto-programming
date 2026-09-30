@@ -60,7 +60,7 @@ def run_resolution():
 
 
 def run_contract_checks():
-    """在一组代表用例上跑 9 项 G 代码契约校验（含 G90/G91 双份）。"""
+    """在一组代表用例上跑 8 项 G 代码契约校验（含 G90/G91 双份）。"""
     print('跑 G 代码契约校验 ...', flush=True)
     specs = [
         synth.Spec(px_per_mm=10.0, line_width=2, skew_deg=0.0, noise=0.0, fillet_r=5.0),
@@ -258,9 +258,9 @@ def build():
     A('| 可运行 CLI | ✅ `python cli.py part.png --ref-diameter 40 --turning -o out.nc` |')
     A('| 合成真值测试集 + 精度比对框架 | ✅ 先于算法完成，且框架自身先自证 |')
     A('| 单元测试 + 6 项精度指标回归 | ✅ pytest 套件（含回归基线与 DoD 门控） |')
-    A('| G 代码契约校验（9 项） | '
-      f'{"✅" if c_ok == len(contracts) else "❌"} G90 {c_ok}/{len(contracts)}、'
-      f'G91 {c_ok91}/{len(contracts)} |')
+    A('| G 代码契约校验（8 个断言项） | '
+      f'{"✅" if c_ok == len(contracts) else "❌"} G90 {c_ok}/{len(contracts)} 用例、'
+      f'G91 {c_ok91}/{len(contracts)} 用例（每例逐项 8/8） |')
     A('| 精度-分辨率关系 | ✅ 第 5 节 |')
     A('| DoD 全数达标 | ❌ 未达成，见第 4 节失败分析 |')
     A('')
@@ -603,7 +603,7 @@ def build():
     A('')
     A('---')
     A('')
-    A('## 6. G 代码契约校验（9 项）')
+    A('## 6. G 代码契约校验（8 个断言项）')
     A('')
     A('对标 DXF 版 `tests/run_checks.py`（6 项检查 / 9 个断言，其中 C1、C2 分别套在')
     A('bulge/shaft/circle 三个 .nc 上）。本模块把它按用例参数化，合并为 8 个断言项：')
