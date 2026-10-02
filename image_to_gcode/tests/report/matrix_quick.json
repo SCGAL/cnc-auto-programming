@@ -94,7 +94,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 0.9779794216156006,
+   "seconds": 1.3858401775360107,
    "metrics": {
     "endpoint_err": 0.05156022066426402,
     "center_err": 0.06945433685322713,
@@ -361,7 +361,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 0.6294922828674316,
+   "seconds": 0.6210463047027588,
    "metrics": {
     "endpoint_err": 0.10212702165992628,
     "center_err": 0.04715805329970474,
@@ -628,7 +628,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 0.6445257663726807,
+   "seconds": 0.628364086151123,
    "metrics": {
     "endpoint_err": 0.03603282077818769,
     "center_err": 0.013481486064634835,
@@ -895,7 +895,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.9701738357543945,
+   "seconds": 1.9475691318511963,
    "metrics": {
     "endpoint_err": 0.258128958941324,
     "center_err": 0.11938106973294241,
@@ -1164,7 +1164,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.2632110118865967,
+   "seconds": 1.2370820045471191,
    "metrics": {
     "endpoint_err": 0.09045437246441258,
     "center_err": 0.07696737970805892,
@@ -1433,7 +1433,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 0.5532581806182861,
+   "seconds": 0.9827523231506348,
    "metrics": {
     "endpoint_err": 0.03453781653467199,
     "center_err": 0.02469856515492077,
@@ -1700,7 +1700,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 0.8310286998748779,
+   "seconds": 1.9278252124786377,
    "metrics": {
     "endpoint_err": 0.045566400595166257,
     "center_err": 0.033555645187644194,
@@ -1967,7 +1967,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.5908362865447998,
+   "seconds": 1.5729937553405762,
    "metrics": {
     "endpoint_err": 0.12479286588087309,
     "center_err": 0.08811335261177533,
@@ -2234,7 +2234,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.389598846435547,
+   "seconds": 2.246381998062134,
    "metrics": {
     "endpoint_err": 0.04095780047745741,
     "center_err": 0.02327055581734692,
@@ -2501,7 +2501,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.1138193607330322,
+   "seconds": 1.1235485076904297,
    "metrics": {
     "endpoint_err": 0.09201650399559114,
     "center_err": 0.12075014966394368,

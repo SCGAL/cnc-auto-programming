@@ -94,7 +94,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 0.8771624565124512,
+   "seconds": 1.135002613067627,
    "metrics": {
     "endpoint_err": 0.12635577529910338,
     "center_err": 0.09285241922268911,
@@ -361,7 +361,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 0.6102445125579834,
+   "seconds": 0.6136455535888672,
    "metrics": {
     "endpoint_err": 0.10212702165992628,
     "center_err": 0.04715805329970474,
@@ -628,7 +628,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 0.7873306274414062,
+   "seconds": 0.7345936298370361,
    "metrics": {
     "endpoint_err": 0.04160870750169817,
     "center_err": 0.05083241664518092,
@@ -895,7 +895,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 0.5977425575256348,
+   "seconds": 0.5847792625427246,
    "metrics": {
     "endpoint_err": 0.21122197928246764,
     "center_err": 0.13344276851791656,
@@ -1164,7 +1164,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.23936128616333,
+   "seconds": 1.1939876079559326,
    "metrics": {
     "endpoint_err": 0.24851404966086565,
     "center_err": 0.1060108386555969,
@@ -1433,7 +1433,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.5447492599487305,
+   "seconds": 1.5179877281188965,
    "metrics": {
     "endpoint_err": 0.679392422179228,
     "center_err": 0.08951210181066271,
@@ -1719,7 +1719,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.7842309474945068,
+   "seconds": 2.804690361022949,
    "metrics": {
     "endpoint_err": 0.056927176043110976,
     "center_err": 0.06759249024896828,
@@ -1988,7 +1988,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.1574597358703613,
+   "seconds": 3.197968006134033,
    "metrics": {
     "endpoint_err": 0.13289064949075044,
     "center_err": 0.05592403714555969,
@@ -2257,7 +2257,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.271453619003296,
+   "seconds": 3.2955877780914307,
    "metrics": {
     "endpoint_err": 1.1420827713152566,
     "center_err": 0.08481516072614254,
@@ -2509,7 +2509,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.977229356765747,
+   "seconds": 2.914445161819458,
    "metrics": {
     "endpoint_err": 0.17325284155000595,
     "center_err": 0.11513011809175235,
@@ -2778,7 +2778,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.872879505157471,
+   "seconds": 4.83552098274231,
    "metrics": {
     "endpoint_err": 0.22130599034001006,
     "center_err": 0.15415314207163816,
@@ -3047,7 +3047,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.179173469543457,
+   "seconds": 3.4846882820129395,
    "metrics": {
     "endpoint_err": 1.111136658345206,
     "center_err": 0.0981365726200073,
@@ -3299,7 +3299,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.4640400409698486,
+   "seconds": 1.4376909732818604,
    "metrics": {
     "endpoint_err": 0.03453781653467199,
     "center_err": 0.02469856515492077,
@@ -3566,7 +3566,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.5813069343566895,
+   "seconds": 1.6123614311218262,
    "metrics": {
     "endpoint_err": 0.05156022066426402,
     "center_err": 0.06945433685322713,
@@ -3833,7 +3833,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.8813879489898682,
+   "seconds": 1.9125373363494873,
    "metrics": {
     "endpoint_err": 0.045566400595166257,
     "center_err": 0.033555645187644194,
@@ -4100,7 +4100,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.052109956741333,
+   "seconds": 3.0465235710144043,
    "metrics": {
     "endpoint_err": 0.0758349131096542,
     "center_err": 0.035351837014544765,
@@ -4369,7 +4369,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 5.006520509719849,
+   "seconds": 5.022515773773193,
    "metrics": {
     "endpoint_err": 0.05190998795984173,
     "center_err": 0.03756555697289443,
@@ -4638,7 +4638,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.9558095932006836,
+   "seconds": 3.87739634513855,
    "metrics": {
     "endpoint_err": 0.06568095670823543,
     "center_err": 0.061852043988054814,
@@ -4907,7 +4907,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.917135953903198,
+   "seconds": 4.9575700759887695,
    "metrics": {
     "endpoint_err": 0.04760904365783877,
     "center_err": 0.04797610121658196,
@@ -5176,7 +5176,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 5.133232355117798,
+   "seconds": 5.115971803665161,
    "metrics": {
     "endpoint_err": 0.258128958941324,
     "center_err": 0.11938106973294241,
@@ -5445,7 +5445,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.382708787918091,
+   "seconds": 3.297123670578003,
    "metrics": {
     "endpoint_err": 1.122306505016746,
     "center_err": 0.09233566979094363,
@@ -5697,7 +5697,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.5581114292144775,
+   "seconds": 1.5923633575439453,
    "metrics": {
     "endpoint_err": 0.22027377424167036,
     "center_err": 0.191124699486798,
@@ -5966,7 +5966,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.2244088649749756,
+   "seconds": 3.1710076332092285,
    "metrics": {
     "endpoint_err": 0.09045437246441258,
     "center_err": 0.07696737970805892,
@@ -6235,7 +6235,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.3077239990234375,
+   "seconds": 3.465721368789673,
    "metrics": {
     "endpoint_err": 1.1201344880999862,
     "center_err": 0.07676100917028217,
@@ -6487,7 +6487,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.4646472930908203,
+   "seconds": 1.4215099811553955,
    "metrics": {
     "endpoint_err": 0.03341389577602671,
     "center_err": 0.025893704915473662,
@@ -6754,7 +6754,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.6384563446044922,
+   "seconds": 1.6162374019622803,
    "metrics": {
     "endpoint_err": 0.03603282077818769,
     "center_err": 0.013481486064634835,
@@ -7021,7 +7021,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 1.9770915508270264,
+   "seconds": 1.9163808822631836,
    "metrics": {
     "endpoint_err": 0.01935302267872738,
     "center_err": 0.008308264243314276,
@@ -7288,7 +7288,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.677810430526733,
+   "seconds": 4.6704442501068115,
    "metrics": {
     "endpoint_err": 0.11799559290149982,
     "center_err": 0.060042675260222195,
@@ -7557,7 +7557,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 5.023989200592041,
+   "seconds": 5.070045471191406,
    "metrics": {
     "endpoint_err": 0.1013926327045904,
     "center_err": 0.06480721057807641,
@@ -7826,7 +7826,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.351940631866455,
+   "seconds": 3.425583839416504,
    "metrics": {
     "endpoint_err": 0.12657727330383375,
     "center_err": 0.07782345405486589,
@@ -8095,7 +8095,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.2356040477752686,
+   "seconds": 3.2756617069244385,
    "metrics": {
     "endpoint_err": 0.03815187743195172,
     "center_err": 0.036790507837072634,
@@ -8364,7 +8364,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.852572679519653,
+   "seconds": 4.976807594299316,
    "metrics": {
     "endpoint_err": 0.13579987509832026,
     "center_err": 0.02059016718681331,
@@ -8633,7 +8633,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.3950579166412354,
+   "seconds": 3.369253158569336,
    "metrics": {
     "endpoint_err": 1.0853181127532558,
     "center_err": 0.026192194130789364,
@@ -8885,7 +8885,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 5.082033157348633,
+   "seconds": 5.009391784667969,
    "metrics": {
     "endpoint_err": 0.08890307128570317,
     "center_err": 0.05119303760667776,
@@ -9154,7 +9154,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.351994276046753,
+   "seconds": 3.4448235034942627,
    "metrics": {
     "endpoint_err": 0.1434706870265217,
     "center_err": 0.08885706197736479,
@@ -9423,7 +9423,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.33219838142395,
+   "seconds": 3.4739646911621094,
    "metrics": {
     "endpoint_err": 1.018565531088075,
     "center_err": 0.04806841169341342,
@@ -9675,7 +9675,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.326047897338867,
+   "seconds": 2.3796987533569336,
    "metrics": {
     "endpoint_err": 0.03415077984513726,
     "center_err": 0.037352849103793,
@@ -9942,7 +9942,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.396860122680664,
+   "seconds": 2.283338785171509,
    "metrics": {
     "endpoint_err": 0.055225550835700084,
     "center_err": 0.022158789302870352,
@@ -10209,7 +10209,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.0510032176971436,
+   "seconds": 3.1039750576019287,
    "metrics": {
     "endpoint_err": 0.020407412574978894,
     "center_err": 0.024939985037310007,
@@ -10476,7 +10476,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.592982530593872,
+   "seconds": 2.4087181091308594,
    "metrics": {
     "endpoint_err": 0.05835394386607756,
     "center_err": 0.052374854459131974,
@@ -10745,7 +10745,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 6.799628019332886,
+   "seconds": 6.52820086479187,
    "metrics": {
     "endpoint_err": 0.1351756318092063,
     "center_err": 0.028005749133281445,
@@ -11014,7 +11014,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 5.962979316711426,
+   "seconds": 5.6645073890686035,
    "metrics": {
     "endpoint_err": 0.07142673251381715,
     "center_err": 0.04494967432723757,
@@ -11283,7 +11283,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.3949341773986816,
+   "seconds": 2.3165619373321533,
    "metrics": {
     "endpoint_err": 0.16988696473478337,
     "center_err": 0.12084583411384196,
@@ -11552,7 +11552,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.395648717880249,
+   "seconds": 2.293286085128784,
    "metrics": {
     "endpoint_err": 0.07485592635194098,
     "center_err": 0.04803717974540029,
@@ -11821,7 +11821,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.8478074073791504,
+   "seconds": 2.8061535358428955,
    "metrics": {
     "endpoint_err": 1.0080519055440096,
     "center_err": 0.04542772845198185,
@@ -12073,7 +12073,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.524152994155884,
+   "seconds": 2.3846852779388428,
    "metrics": {
     "endpoint_err": 0.4039751425017856,
     "center_err": 0.03248729048093946,
@@ -12376,7 +12376,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.853398084640503,
+   "seconds": 4.64745306968689,
    "metrics": {
     "endpoint_err": 0.05469116181342493,
     "center_err": 0.03984497336262649,
@@ -12645,7 +12645,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.889692544937134,
+   "seconds": 2.906691551208496,
    "metrics": {
     "endpoint_err": 1.0866346498972317,
     "center_err": 0.03319918307833669,
@@ -12897,7 +12897,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.3254551887512207,
+   "seconds": 2.2791695594787598,
    "metrics": {
     "endpoint_err": 0.03083190707427663,
     "center_err": 0.024807364524341825,
@@ -13164,7 +13164,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.3163392543792725,
+   "seconds": 2.2782142162323,
    "metrics": {
     "endpoint_err": 0.04095780047745741,
     "center_err": 0.02327055581734692,
@@ -13431,7 +13431,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.0638442039489746,
+   "seconds": 2.994274616241455,
    "metrics": {
     "endpoint_err": 0.013624946201372608,
     "center_err": 0.010464071375239432,
@@ -13698,7 +13698,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 7.325792551040649,
+   "seconds": 7.336372137069702,
    "metrics": {
     "endpoint_err": 0.046389536103244054,
     "center_err": 0.05208494925869779,
@@ -13967,7 +13967,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.7257606983184814,
+   "seconds": 4.577149868011475,
    "metrics": {
     "endpoint_err": 0.08184667282972322,
     "center_err": 0.034072471223933996,
@@ -14236,7 +14236,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 6.097671985626221,
+   "seconds": 5.9005208015441895,
    "metrics": {
     "endpoint_err": 0.029723885572301476,
     "center_err": 0.031009173251959374,
@@ -14505,7 +14505,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.1192386150360107,
+   "seconds": 2.0819525718688965,
    "metrics": {
     "endpoint_err": 0.061953073135405455,
     "center_err": 0.07378887968249302,
@@ -14774,7 +14774,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.723723649978638,
+   "seconds": 4.4808268547058105,
    "metrics": {
     "endpoint_err": 0.05112321993787189,
     "center_err": 0.025524495893310847,
@@ -15043,7 +15043,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.120622396469116,
+   "seconds": 3.158442735671997,
    "metrics": {
     "endpoint_err": 0.05937925024465066,
     "center_err": 0.05043708700051466,
@@ -15312,7 +15312,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.476741075515747,
+   "seconds": 4.475490093231201,
    "metrics": {
     "endpoint_err": 0.12223922657548719,
     "center_err": 0.08395058055955974,
@@ -15581,7 +15581,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.5432283878326416,
+   "seconds": 2.364349842071533,
    "metrics": {
     "endpoint_err": 0.050368989298696855,
     "center_err": 0.019223036581200597,
@@ -15850,7 +15850,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 6.2123048305511475,
+   "seconds": 5.758965253829956,
    "metrics": {
     "endpoint_err": 0.04206666097751134,
     "center_err": 0.02056615097764682,
@@ -16119,7 +16119,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.360280752182007,
+   "seconds": 2.3030099868774414,
    "metrics": {
     "endpoint_err": 0.03493862674484511,
     "center_err": 0.01851758759465088,
@@ -16386,7 +16386,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.3954412937164307,
+   "seconds": 2.406081438064575,
    "metrics": {
     "endpoint_err": 0.03459484024588049,
     "center_err": 0.015367322121061084,
@@ -16653,7 +16653,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 3.106705904006958,
+   "seconds": 3.2568488121032715,
    "metrics": {
     "endpoint_err": 0.008982953817237153,
     "center_err": 0.006567696972960776,
@@ -16920,7 +16920,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.4601731300354004,
+   "seconds": 2.4722087383270264,
    "metrics": {
     "endpoint_err": 0.02385697535288234,
     "center_err": 0.030551043769077343,
@@ -17189,7 +17189,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.620438098907471,
+   "seconds": 4.474542140960693,
    "metrics": {
     "endpoint_err": 0.04622106250097141,
     "center_err": 0.017364785944055112,
@@ -17458,7 +17458,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 6.333892822265625,
+   "seconds": 6.445190191268921,
    "metrics": {
     "endpoint_err": 0.03152593672359009,
     "center_err": 0.015604751429158641,
@@ -17727,7 +17727,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.434339761734009,
+   "seconds": 2.484727144241333,
    "metrics": {
     "endpoint_err": 0.0406280203346639,
     "center_err": 0.05529811456405524,
@@ -17996,7 +17996,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.736206769943237,
+   "seconds": 4.8134260177612305,
    "metrics": {
     "endpoint_err": 0.020374377895397373,
     "center_err": 0.017321968469836177,
@@ -18265,7 +18265,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 5.7669572830200195,
+   "seconds": 5.8330161571502686,
    "metrics": {
     "endpoint_err": 1.009853105277621,
     "center_err": 0.02236935935751308,
@@ -18517,7 +18517,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 2.387270450592041,
+   "seconds": 2.315066337585449,
    "metrics": {
     "endpoint_err": 0.05433104293759007,
     "center_err": 0.012872429962643213,
@@ -18786,7 +18786,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 4.847442626953125,
+   "seconds": 4.889703750610352,
    "metrics": {
     "endpoint_err": 0.04981001091606005,
     "center_err": 0.03468830445136472,
@@ -19055,7 +19055,7 @@
    },
    "ok": true,
    "error": null,
-   "seconds": 6.125473976135254,
+   "seconds": 5.887883424758911,
    "metrics": {
     "endpoint_err": 0.029692740682904867,
     "center_err": 0.026149012177017324,
