@@ -52,7 +52,7 @@ def build_parser():
     p.add_argument('-o', '--output', default=None,
                    help='输出 .nc 路径（缺省 = 输入同名 + .nc）')
     p.add_argument('--turning', action='store_true',
-                   help='车削模式（本版必须显式给出；用于确认你接受第 4 节的边界）')
+                   help='车削模式（本版必须显式给出；用于确认你接受"只做车削上半部外轮廓"这条边界）')
 
     g = p.add_argument_group('标定（三选一，必须给；否则报错退出）')
     g.add_argument('--mm-per-px', type=float, default=None, help='显式比例：毫米/像素')
